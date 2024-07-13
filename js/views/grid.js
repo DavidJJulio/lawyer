@@ -47,7 +47,7 @@ export class grid extends HTMLElement {
             }
             .about {
                 width: 100%;
-                height: 40vh;
+                height: 45vh;
                 display: flex;
             }
 
@@ -69,7 +69,40 @@ export class grid extends HTMLElement {
                 height: 100%;
                 background-color: bisque;
             }
+            .practice_areas {
+                display: flex;
+                width: 100%;
+                height: 50vh;
+                justify-content: center;
+                align-items: center;
+                background-color: blueviolet;
+            }
 
+            .practice_container {
+                display: flex;
+                width: 65%;
+                padding: 1%;
+                height: 100%;
+                gap: 10px;
+                flex-direction: column;
+                background-color: aquamarine;
+            }
+            .practice_header {
+                width: 100%;
+                height: 38%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: bisque;
+            }
+            .practice_cards {
+                width: 100%;
+                height: 62%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: azure;
+            }
         </style>
         <main>
             <section class ="hitch">
@@ -89,7 +122,17 @@ export class grid extends HTMLElement {
             
             </div>
             </section>
-            <section></section>
+            <section class ="practice_areas">
+            <div class ="practice_container">
+                <div class ="practice_header">
+                <h1></h1>
+                <p></p>
+                </div>
+                <div class ="practice_cards">
+                
+                </div>
+            </div>
+            </section>
             <section></section>
             <section></section>
         </main>
