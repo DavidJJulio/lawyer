@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 main{
@@ -31,7 +32,7 @@ main{
 
 .nav_links {
     grid-area: links;
-    background-color: antiquewhite;
+    background-color: #ebebeb;
 }
 
 .nav_header {
@@ -39,9 +40,24 @@ main{
     background-color: aqua;
 }
 
-.img_Container {
+.img_container {
     grid-area: container;
-    background-color: rebeccapurple;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.6 black;
+    visibility: inherit;
+    background-image: url(../../storage/img/funcion-abogado-1200x628.jpg);
+}
+.img_container::after {
+    background-color: #792b4e41;
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
 }
 
 .about {
@@ -112,7 +128,7 @@ main{
     display: flex;
     padding: 1%;
     justify-content: flex-end;
-    background-color: coral;
+    background-color: #f1f1f1;
 }
 
 .form_container {
@@ -140,6 +156,58 @@ main{
     display: flex;
     width: 30%;
     height: 100%;
-    background-color: black;
+    background-color: #792b4e;
     gap: 10px;
+}
+
+.img_1 {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+li {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 1px;
+    justify-content: center;
+    align-items: center;
+}
+a {
+    text-decoration: none;
+}
+
+.nav_links i:hover {
+    color: #792b4e;
+}
+
+.nav_links a:hover {
+    color: #c7608e;
+}
+
+.a_social_media {
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.a_social_media i {
+    font-size: 1.3em;
+}
+.a_social_media:hover {
+    background-color: #792b4e;
+    color: white;
+}
+.a_social_media i:hover {
+    color: white;
+}
+
+.li_socia_media {
+    display: flex;
+    gap: 7px;
 }
