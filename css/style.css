@@ -8,11 +8,11 @@
 
 body {
     width: 100%;
-    height: 500vh;
+    height: auto;
 }
 
 my-grid {
     display: block;
     width: 100%;
-    height: 500vh;
+    height: auto;
 }

@@ -105,3 +105,41 @@ main{
     justify-content: center;
     background-color: azure;
 }
+
+.form {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    padding: 1%;
+    justify-content: flex-end;
+    background-color: coral;
+}
+
+.form_container {
+    width: 50%;
+    height: 100%;
+    background-color: darkgreen;
+    display: flex;
+}
+
+.footer {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    background-color: chocolate;
+}
+
+.footer_hitch {
+    width: 30%;
+    height: 100%;
+    background-color: black;
+}
+
+.footer_container {
+    display: flex;
+    width: 30%;
+    height: 100%;
+    background-color: black;
+    gap: 10px;
+}

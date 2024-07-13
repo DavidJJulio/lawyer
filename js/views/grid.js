@@ -13,7 +13,7 @@ export class grid extends HTMLElement {
                 display: flex;
                 background-color: gainsboro;
                 flex-direction: column;
-                height: 500vh;
+                height: auto;
                 width: 100%;
             }
 
@@ -103,6 +103,43 @@ export class grid extends HTMLElement {
                 justify-content: center;
                 background-color: azure;
             }
+            .form {
+                width: 100%;
+                height: 60vh;
+                display: flex;
+                padding: 1%;
+                justify-content: flex-end;
+                background-color: coral;
+            }
+
+            .form_container {
+                width: 50%;
+                height: 100%;
+                background-color: darkgreen;
+                display: flex;
+            }
+
+            .footer {
+                width: 100%;
+                height: 40vh;
+                gap: 5%;
+                display: flex;
+                justify-content: center;
+                background-color: chocolate;
+            }
+
+            .footer_hitch {
+                width: 30%;
+                height: 100%;
+                background-color: black;
+            }
+
+            .footer_container {
+                display: flex;
+                width: 30%;
+                height: 100%;
+                background-color: black;
+            }
         </style>
         <main>
             <section class ="hitch">
@@ -111,30 +148,42 @@ export class grid extends HTMLElement {
                 <div class ="img_container">
                 
                 </div>
-
             </section>
 
             <section class ="about">
-            <div class ="about_me">
+                <div class ="about_me">
+                    
+                </div>
+                <div class ="my_commitment">
                 
-            </div>
-            <div class ="my_commitment">
-            
-            </div>
+                </div>
             </section>
+
             <section class ="practice_areas">
-            <div class ="practice_container">
-                <div class ="practice_header">
-                <h1></h1>
-                <p></p>
+                <div class ="practice_container">
+                    <div class ="practice_header">
+                    <h1></h1>
+                    <p></p>
+                    </div>
+                    <div class ="practice_cards">
+                    
+                    </div>
                 </div>
-                <div class ="practice_cards">
-                
-                </div>
-            </div>
             </section>
-            <section></section>
-            <section></section>
+
+            <section class ="form">
+                <div class ="form_container">
+
+                </div>
+            </section>
+
+            <section class ="footer">
+                <div class ="footer_hitch"></div>
+                <div class ="footer_container">
+                    <div class ="footer_address"></div>
+                    <div class ="footer_contact"></div>
+                </div>
+            </section>
         </main>
         `
     }
