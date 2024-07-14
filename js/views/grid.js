@@ -45,6 +45,9 @@ export class grid extends HTMLElement {
             .nav_header {
                 grid-area: header;
                 background-color: azure;
+                display: flex;
+                flex-direction: row;
+                position: sticky;
             }
 
             .img_container {
@@ -53,13 +56,12 @@ export class grid extends HTMLElement {
                 background-size: cover;
                 background-position: center;
                 background-repeat: no-repeat;
-                visibility: inherit;
-                opacity: 0.8;
+                opacity: 0.7;
                 background-color: #792b4e; 
                 background-image: url(../../storage/img/7.jpg);
             }
             .img_container::after {
-                background-color: #792b4e41;
+                background-color: #792b4e17;
                 content: '';
                 width: 100%;
                 height: 100%;
@@ -67,27 +69,108 @@ export class grid extends HTMLElement {
             
             .about {
                 width: 100%;
-                height: 45vh;
+                height: 47vh;
                 display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: azure;
             }
 
             .about_me {
                 display: flex;
-                justify-content: center;
-                align-items: center;
+                justify-content: start;
+                align-items: end;
                 flex-direction: column;
                 width: 50%;
+                padding: 4%;
+                padding-left: 8%;
+                gap: 8%;
                 height: 100%;
-                background-color: brown;
+                background-color: azure;
             }
+
+            .about_me p {
+                width: 75%;
+                height: 100%;
+                display: flex;
+                color: #525252;
+                font-size: .9em;
+                justify-content: end;
+                align-items: start;
+                line-height: 1.7;
+                color: #2e2e2e;
+            }
+
+            .about_me div {
+                width: 75%;
+                height: 5%;
+                display: flex;
+                justify-content: start;
+                align-items: start;
+            }
+            .about_me div div {
+                width: 20%;
+                height: 4px;
+                background-color: #792b4e;
+            }
+
+            .about_me h1 {
+                width: 75%;
+                height: 50%;
+                display: flex;
+                justify-content: start;
+                align-items: end;
+                font-size: 2.2em;
+                font-weight: 100;
+                color: #000000;
+            }
+
+            .my_commitment p {
+                width: 50%;
+                height: 100%;
+                display: flex;
+                color: #525252;
+                font-size: .9em;
+                justify-content: start;
+                align-items: start;
+                line-height: 1.7;
+                color: #2e2e2e;
+            }
+
+            .my_commitment div {
+                width: 75%;
+                height: 5%;
+                display: flex;
+                justify-content: start;
+                align-items: start;
+            }
+            .my_commitment div div {
+                width: 20%;
+                height: 4px;
+                background-color: #792b4e;
+            }
+
+            .my_commitment h1 {
+                width: 50%;
+                height: 50%;
+                display: flex;
+                justify-content: start;
+                align-items: end;
+                font-size: 2.2em;
+                font-weight: 100;
+                color: #000000;
+            }
+
             .my_commitment {
                 display: flex;
-                justify-content: center;
-                align-items: center;
+                justify-content: start;
+                align-items: start;
                 flex-direction: column;
-                width: 50%;
+                width: 45%;
+                padding: 4%;
+                gap: 8%;
                 height: 100%;
-                background-color: bisque;
+                background-color: azure;
             }
             .practice_areas {
                 display: flex;
@@ -95,7 +178,7 @@ export class grid extends HTMLElement {
                 height: 50vh;
                 justify-content: center;
                 align-items: center;
-                background-color: blueviolet;
+                background-color: #ebebeb;
             }
 
             .practice_container {
@@ -105,7 +188,7 @@ export class grid extends HTMLElement {
                 height: 100%;
                 gap: 10px;
                 flex-direction: column;
-                background-color: aquamarine;
+                background-color: #ebebeb;
             }
             .practice_header {
                 width: 100%;
@@ -215,6 +298,7 @@ export class grid extends HTMLElement {
                 font-size: 1.4em;
                 width: 100%;
                 height: 100%;
+                border-radius: 100%;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -225,6 +309,48 @@ export class grid extends HTMLElement {
             }
             .a_social_media i:hover {
                 color: white;
+            }
+
+            .header_links {
+                width: 50%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: start;
+                gap: 1%;
+            }
+
+            .logo {
+                width: 50%;
+                height: 100%;
+            }
+
+            .header_links li {
+                width: 13%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 5px;
+            }
+
+            .header_links a {
+                color: #792b4e;
+                font-size: 95%;
+                font-weight: bold;
+                border-radius: 5px;
+                width: 100%;
+                height: 45%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .header_links a:hover {
+                color: white;
+                background-color: #792b4e;
+                transition: 0.25s;
+                font-weight: bolder;
             }
 
         </style>
@@ -248,7 +374,23 @@ export class grid extends HTMLElement {
                 <a class ="a_social_media"><i class='bx bxl-instagram-alt'></i></a>
                 </li>
                 </nav>
-                <nav class ="nav_header"></nav>
+                <nav class ="nav_header">
+                <div class ="logo"></div>
+                <div class ="header_links">
+                <li>
+                    <a>Inicio</a>
+                </li>
+                <li>
+                    <a>Acerca de mi</a>
+                </li>
+                <li>
+                    <a>Valores</a>
+                </li>
+                <li>
+                    <a>Contacto</a>
+                </li>
+                </div>
+                </nav>
                 <div class ="img_container">
                    
                 </div>
@@ -256,10 +398,18 @@ export class grid extends HTMLElement {
 
             <section class ="about">
                 <div class ="about_me">
-                    
+                    <h1>Acerca de mi</h1>
+                    <div>
+                    <div></div>
+                    </div>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla quos dolorum quaerat? Odit eaque, voluptas non corporis magni unde corrupti. Ducimus dolore consequatur eligendi iusto pariatur excepturi fugiat maxime nesciunt.</p>
                 </div>
                 <div class ="my_commitment">
-                
+                <h1>Mi compromiso</h1>
+                    <div>
+                    <div></div>
+                    </div>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla quos dolorum quaerat? Odit eaque, voluptas non corporis magni unde corrupti. Ducimus dolore consequatur eligendi iusto pariatur excepturi fugiat maxime nesciunt.</p>
                 </div>
             </section>
 
