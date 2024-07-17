@@ -111,6 +111,8 @@ main{
     width: 100%;
     height: 38%;
     display: flex;
+    flex-direction: column;
+    gap: 5%;
     align-items: center;
     justify-content: center;
     background-color: bisque;

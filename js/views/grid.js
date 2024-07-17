@@ -136,6 +136,18 @@ export class grid extends HTMLElement {
                 line-height: 1.7;
                 color: #2e2e2e;
             }
+            .practice_header div div {
+                width: 20%;
+                height: 4px;
+                background-color: #792b4e;
+            }
+            .practice_header div {
+                width: 50%;
+                height: 5%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
 
             .my_commitment div {
                 width: 75%;
@@ -175,7 +187,7 @@ export class grid extends HTMLElement {
             .practice_areas {
                 display: flex;
                 width: 100%;
-                height: 50vh;
+                height: 55vh;
                 justify-content: center;
                 align-items: center;
                 background-color: #ebebeb;
@@ -194,16 +206,20 @@ export class grid extends HTMLElement {
                 width: 100%;
                 height: 38%;
                 display: flex;
+                flex-direction: column;
+                gap: 15%;
                 align-items: center;
                 justify-content: center;
-                background-color: bisque;
+                background-color: #ebebeb;
             }
+
             .practice_cards {
                 width: 100%;
                 height: 62%;
+                padding: 1%;
                 display: flex;
-                align-items: center;
-                justify-content: center;
+                align-items: start;
+                justify-content: start;
                 background-color: azure;
             }
             .form {
@@ -353,6 +369,26 @@ export class grid extends HTMLElement {
                 font-weight: bolder;
             }
 
+            .practice_header h1{
+                font-size: 2.2em;
+                font-weight: 100;
+                color: #000000;
+            }
+
+            .practice_card {
+                width: 25%;
+                height: 15%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 5%;
+            }
+
+            .practice_card i{
+                color: #792b4e;
+                font-size: 150%;
+            }
+
         </style>
         <main>
             <section class ="hitch">
@@ -416,10 +452,15 @@ export class grid extends HTMLElement {
             <section class ="practice_areas">
                 <div class ="practice_container">
                     <div class ="practice_header">
-                    <h1></h1>
-                    <p></p>
+                    <h1>Areas de practica</h1>
+                    <div><div></div></div>
+                    <p>Lorem...</p>
                     </div>
                     <div class ="practice_cards">
+                    <div class ="practice_card">
+                    <i class='bx bxs-right-arrow'></i>
+                    <h1>DERECHO PENAL</h1>
+                    </div>
                     </div>
                 </div>
             </section>
