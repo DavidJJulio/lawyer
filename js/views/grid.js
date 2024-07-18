@@ -56,12 +56,12 @@ export class grid extends HTMLElement {
                 background-size: cover;
                 background-position: center;
                 background-repeat: no-repeat;
-                opacity: 0.7;
+                opacity: 0.9;
                 background-color: #792b4e; 
                 background-image: url(../../storage/img/7.jpg);
             }
             .img_container::after {
-                background-color: #792b4e17;
+                background-color: #2b272775;
                 content: '';
                 width: 100%;
                 height: 100%;
@@ -98,7 +98,7 @@ export class grid extends HTMLElement {
                 justify-content: end;
                 align-items: start;
                 line-height: 1.7;
-                color: #2e2e2e;
+
             }
 
             .about_me div {
@@ -134,7 +134,7 @@ export class grid extends HTMLElement {
                 justify-content: start;
                 align-items: start;
                 line-height: 1.7;
-                color: #2e2e2e;
+
             }
             .practice_header div div {
                 width: 20%;
@@ -200,7 +200,8 @@ export class grid extends HTMLElement {
                 height: 100%;
                 gap: 10px;
                 flex-direction: column;
-                background-color: #ebebeb;
+                justify-content: center;
+                align-items: center;
             }
             .practice_header {
                 width: 100%;
@@ -216,11 +217,12 @@ export class grid extends HTMLElement {
             .practice_cards {
                 width: 100%;
                 height: 62%;
-                padding: 1%;
+                padding-left: 9%;
+                padding-bottom: 2%;
+                gap: 10%;
                 display: flex;
                 align-items: start;
-                justify-content: start;
-                background-color: azure;
+                flex-wrap: wrap;
             }
             .form {
                 width: 100%;
@@ -228,13 +230,13 @@ export class grid extends HTMLElement {
                 display: flex;
                 padding: 1%;
                 justify-content: flex-end;
-                background-color: coral;
+                background-color: azure;
             }
 
             .form_container {
                 width: 50%;
                 height: 100%;
-                background-color: darkgreen;
+                background-color: #ebebeb;
                 display: flex;
             }
 
@@ -375,6 +377,11 @@ export class grid extends HTMLElement {
                 color: #000000;
             }
 
+            .practice_header p {
+                color: #525252;
+                font-size: 90%
+            }
+
             .practice_card {
                 width: 25%;
                 height: 15%;
@@ -384,10 +391,17 @@ export class grid extends HTMLElement {
                 gap: 5%;
             }
 
+            .practice_card h1{
+                font-weight: 100;
+                font-size: 1.4em;
+                width: 100%;
+            }
+
             .practice_card i{
                 color: #792b4e;
                 font-size: 150%;
             }
+
 
         </style>
         <main>
@@ -461,13 +475,41 @@ export class grid extends HTMLElement {
                     <i class='bx bxs-right-arrow'></i>
                     <h1>DERECHO PENAL</h1>
                     </div>
+                    <div class ="practice_card">
+                    <i class='bx bxs-right-arrow'></i>
+                    <h1>DERECHO CORPORATIVO</h1>
+                    </div>
+                    <div class ="practice_card">
+                    <i class='bx bxs-right-arrow'></i>
+                    <h1>DERECHO LABORAL Y SEGURIDAD SOCIAL</h1>
+                    </div>
+                    <div class ="practice_card">
+                    <i class='bx bxs-right-arrow'></i>
+                    <h1>DERECHO PÚBLICO Y ADMINISTRATIVO</h1>
+                    </div>
+                    <div class ="practice_card">
+                    <i class='bx bxs-right-arrow'></i>
+                    <h1>DERECHO TRIBUTARIO</h1>
+                    </div>
+                    <div class ="practice_card">
+                    <i class='bx bxs-right-arrow'></i>
+                    <h1>DERECHO PRIVADO</h1>
+                    </div>
+                    <div class ="practice_card">
+                    <i class='bx bxs-right-arrow'></i>
+                    <h1>DERECHO DE FAMILIA</h1>
+                    </div>
+                    <div class ="practice_card">
+                    <i class='bx bxs-right-arrow'></i>
+                    <h1>DERECHO COMERCIAL</h1>
+                    </div>
                     </div>
                 </div>
             </section>
 
             <section class ="form">
                 <div class ="form_container">
-
+                    <h1></h1>
                 </div>
             </section>
 
