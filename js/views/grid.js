@@ -58,7 +58,7 @@ export class grid extends HTMLElement {
                 background-repeat: no-repeat;
                 opacity: 0.9;
                 background-color: #792b4e; 
-                background-image: url(../../storage/img/7.jpg);
+                background-image: url(https://github.com/DavidJJulio/lawyer/blob/main/storage/img/7.jpg?raw=true);
             }
             .img_container::after {
                 background-color: #2b272775;
